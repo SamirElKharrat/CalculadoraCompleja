@@ -39,13 +39,6 @@ public class Complejo {
 	public final void setImaginario(final double imaginario) {
 		this.imaginarioProperty().set(imaginario);
 	}
-	
-	public Complejo SUMAR(Complejo c) {
-		Complejo r = new Complejo();
-		r.realProperty().bind(real.add(c.realProperty()));
-		r.imaginarioProperty().bind(imaginario.add(c.imaginarioProperty()));
-		return r;
-	}
-	
+
 
 }
